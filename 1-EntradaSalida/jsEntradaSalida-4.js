@@ -4,6 +4,10 @@
 */
 function mostrar()
 {
+	var dato;
+
+	dato = prompt("tomar dato");
+	alert(dato);
 	
 }
 
