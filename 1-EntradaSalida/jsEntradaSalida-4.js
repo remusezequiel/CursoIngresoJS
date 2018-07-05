@@ -4,10 +4,10 @@
 */
 function mostrar()
 {
-	var dato;
+	var dato;//creo la variable dato
 
-	dato = prompt("tomar dato");
-	alert(dato);
-	
+	dato = prompt("tomar dato");//a la variable le asigno la funciom prompt
+
+	document.getElementById("elNombre").value=dato;//al id le otorgo el valor de la variable
 }
 
