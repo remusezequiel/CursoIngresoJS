@@ -17,8 +17,8 @@ function restar()
     var b = document.getElementById("numeroDos").value;
     var c = parseInt(a) - parseInt(b);
 
-    alert("la suma es"+ c);
-	
+    alert("la suma es" + " "+ c);
+	//el + sirve para concatenar y (+ " " +) concatena un espacio en blanco
 }
 
 function multiplicar()
