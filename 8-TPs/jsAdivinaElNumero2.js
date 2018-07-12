@@ -15,14 +15,30 @@ var contadorIntentos;
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
-	 
+	numeroSecreto= Math.floor(Math.random()*(100)+1); //Genera un numero entre
+    console.log(numeroSecreto);                         //Muestra a la variable en la pantalla
+    contadorIntentos=0;        
 	
-
 }
 
 function verificar()
 {
+	var N = document.getElementById("numero").value;
+	contadorIntentos = contadorIntentos + 1;
+    document.getElementById("intentos").value=contadorIntentos;
+	if(numeroSecreto==N && contadorIntentos == 1 ){
+		alert("\"Usted es un psiquico\"")
+	}else if(numeroSecreto==N && contadorIntentos == 2 ){
+		alert("\"Exelente percepción\"")
+	}else if(numeroSecreto==N && contadorIntentos == 3){
+        alert("\"Esto es suerte\"")
+	}else if(numeroSecreto==N && contadorIntentos == 4){
+        alert("\"Exelente tecnica\"")
+	}else if(numeroSecreto==N && contadorIntentos == 5){
+        alert("\"Usted esta en la media\"")
+	}else if(numeroSecreto==N && 5<contadorIntentos<11){
+        alert("\"Falta tecnica\"")
+	}else if(numeroSecreto==N && contadorIntentos<10){
+        alert("\"Afortunado en el amor\"")};
 	
-	
-
-}
+	}

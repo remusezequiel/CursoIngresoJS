@@ -10,10 +10,10 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
-    //ASI NO VA
+    //ASI NO VA AL PROFESOR LE GUSTA QUE SEA TODO CON ELSE IF
     // Variables
  	
-     var cantidad = document.getElementById("Cantidad").value;
+    var cantidad = document.getElementById("Cantidad").value;
     var impfinal = parseInt(cantidad) * 35; //cantidad * presio
     var marca = document.getElementById("Marca").value; 
     
@@ -24,20 +24,24 @@ function CalcularPrecio ()
     if (cantidad == 5 && marca == "ArgentinaLuz"){pcd = impfinal - (0.4*impfinal)}     //B
         else{pcd = impfinal - (0.3*impfinal)};                                         //B
     //--------------------------------------------------------------------------------
-    if(cantidad == 4 && marca == "ArgentinaLuz"||"FelipeLamparas"){                  //C
+    if(cantidad == 4 && marca == "ArgentinaLuz"||"FelipeLamparas"){                    //C
         pcd = impfinal - (impfinal*0.75)}                                              //C
         else{pcd = impfinal - (impfinal*0.2)};                                         //C  
     //--------------------------------------------------------------------------------
-    if(cantidad == 3 && marca == "ArgentinaLuz"){                                    //D
+    if(cantidad == 3 && marca == "ArgentinaLuz"){                                      //D
         pcd = impfinal - ((impfinal*15)/100)}                                          //D 
-        else{                                                                        //D
-            if(cantidad == 3 && marca == "FelipeCompras"){                           //D
+        else{                                                                          //D
+            if(cantidad == 3 && marca == "FelipeCompras"){                             //D
            pcd = impfinal - (impfinal*0.1)}                                            //D
            else{pcd = impfinal - ((impfinal*5)/100)}};                                 //D
    //---------------------------------------------------------------------------------
-   if(pcd>120){ pcd == pcd + pcd*0.1 &&                                                        //E
-       alert("Usted pago"+" "+ pcd +" "+ "siento" +" "+pcd*0.1+" "+"el impuesto que se pago")};//E
+   
+   document.getElementById("precioDescuento").value = pcd;
+   
+   if(pcd>120){ 
+       pcd == pcd + pcd*0.1 && alert("Usted pago"+" "+ pcd +" "+ "siento" +" "+ pcd*0.1 +" "+"el impuesto que se pago")
+    };//E
    //-----------------------------------------------------------------------------------
     //revisar E
-    document.getElementById("precioDescuento").value = pcd;
+
 }
