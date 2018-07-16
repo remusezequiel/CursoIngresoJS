@@ -29,16 +29,17 @@ function comenzar()
 function verificar()
 {
   numero = document.getElementById("numero").value;
-  contadorIntentos = parseInt(contadorIntentos) ;
+  contadorIntentos = parseInt(contadorIntentos) + 1;
    
-   document.getElementById("intentos").value = parseInt(contadorIntentos);
+   document.getElementById("intentos").value = contadorIntentos;
 
   if(numero == numeroSecreto){
     alert("Gano")
   }else if(numero>numeroSecreto){
-      alert("se paso")
-    }else{
-        alert("falta")}
-      };
+    alert("se paso")
+  }else{
+    alert("falta")
+  };
+}
 	
 	
