@@ -7,15 +7,15 @@ function mostrar()
 	var impar=0;
     var cp=0;//contador de positivos
 	var cn=0;//contador de negativos
-	var cc=0;//
+	var cc=0;//contador de ceros
 	var respuesta="si";
 	var sn=0;//acumulador de negativos
 	var sp=0;//acumulador de positivos
 	var num;
 	var pn;//promedio de negativos
 	var pp;//promedio de positivos
-	var Dif;
-	var msg;
+	var Dif;//diferencia entre las cantidades de numeros positivos y negativos
+	var msg;//mensaje
 //-----------------------------------------------------------------------------------------	
 	while(respuesta!="no")
 	{
@@ -69,6 +69,13 @@ function mostrar()
 		msg='Hay mas negativos' + ' ' + (Dif*-1);
 	}
 
-//Falta poner todo en un document.write();
+ document.write
+ (
+	 'La suma de los positivos da como resultado:' + ' ' + sp + 
+	 '/nLa suma de los negativos ingresados es:'+ '' + sn +
+	 '/nLa cantidad de numeros positivos ingresados es:' + ' ' + parseInt(num>0) +
+	 '/nLa cantidad de numeros negativos' + '' + parseInt(num<0) +
+	 '/n'
+ );
 
 }//FIN DE LA FUNCIÓN
