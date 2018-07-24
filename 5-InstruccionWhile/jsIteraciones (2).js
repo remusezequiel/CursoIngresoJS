@@ -1,13 +1,11 @@
 function mostrar()
 {
 	var cont;
-	cont = 10;
-	while(cont>0)
+	cont = 11;
+	while(cont>1)
 	{
-		console.log(cont);
-		cont = cont -1;
-		alert(cont);
-	};
+		alert(--cont);
+	}
 	
 	
 	
