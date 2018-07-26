@@ -84,14 +84,14 @@ function mostrar()
 
  document.write
  (
-	'1-Suma de los negativos.' +' '+ sn 
-	+'2-Suma de los positivos.' +' '+ sp 
-	+'3-Cantidad de positivos.' +' '+ cp 
-	+'4-Cantidad de negativos.' +' '+ cn
-	+'5-Cantidad de ceros.' +' '+ cc
-	+'6-Cantidad de números pares.' +' '+ par
-	+'7-Promedio de positivos.' +' '+ pp 
-	+'8-Promedios de negativos.' +' '+ pn
+	'1-Suma de los negativos.' +' '+ sn + "<br>"
+	+'2-Suma de los positivos.' +' '+ sp + "<br>"
+	+'3-Cantidad de positivos.' +' '+ cp + "<br>"
+	+'4-Cantidad de negativos.' +' '+ cn + "<br>"
+	+'5-Cantidad de ceros.' +' '+ cc + "<br>"
+	+'6-Cantidad de números pares.' +' '+ par + "<br>"
+	+'7-Promedio de positivos.' +' '+ pp + "<br>"
+	+'8-Promedios de negativos.' +' '+ pn + "<br>"
 	+'9-Diferencia entre positivos y negativos' +' '+ Dif
  );
 

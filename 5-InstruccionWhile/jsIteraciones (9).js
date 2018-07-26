@@ -32,7 +32,7 @@ function mostrar()
   		{
          bandera=false
   		  max=num;
-         min=num;
+          min=num;
   		}
   		else if(num>max){max=num;}
   		else if(num<min){min=num;}
