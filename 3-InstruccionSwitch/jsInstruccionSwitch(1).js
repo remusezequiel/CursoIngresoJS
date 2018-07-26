@@ -8,22 +8,27 @@ switch(mesDelAño)
     case "Enero" :
     {
         alert("Que comiences bien el año!!!");
-        break;
+    break;
     }
     case "Marzo" :
     {
         alert("a clases!!!");
-        break;
+    break;
     }
     case "Julio" :
     {
         alert("Se vienen las vacaciones!!! ");
-        break;
+    break;
     }
     case "Diciembre" :
     {
         alert("Felices fiestas!!!");
-        break;
+    break;
+    }
+    default : 
+    {
+        alert("No se mostro ningun mes enunciado");
+    //break; no es necesario poner el break
     }
 }
 

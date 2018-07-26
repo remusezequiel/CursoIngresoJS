@@ -7,16 +7,18 @@ var mesDelAño = document.getElementById('mes').value;
 
 switch(mesDelAño)
 {
-    case "Febrero" :
-    {
+    case "Febrero" :    
         alert("Este mes no tiene mas de 29 dias");
-        break;
-    }
-    default :
-    {
+    break;
+   //---------------------------------------------------
+    case "Abril" :
+    case "Junio" :
+    case "Septiembre" :
+    case "Noviembre" :   
         alert("Este mes tiene mas de 30 dias");
-    }
-
+   //---------------------------------------------------
+    default : 
+        alert("Este mes tiene mas de 31 dias");
 }
 	
 	

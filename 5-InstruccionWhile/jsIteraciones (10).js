@@ -1,3 +1,16 @@
+/**Enunciado:
+Al presionar el botón pedir números hasta que el usuario quiera, mostrar:
+1-Suma de los negativos.
+2-Suma de los positivos.
+3-Cantidad de positivos.
+4-Cantidad de negativos. 
+5-Cantidad de ceros. 
+6-Cantidad de números pares. 
+7-Promedio de positivos. 
+8-Promedios de negativos.
+9-Diferencia entre positivos y negativos, (positvos-negativos). */
+
+
 function mostrar()
 {
 
@@ -16,12 +29,12 @@ function mostrar()
 	var pp;//promedio de positivos
 	var Dif;//diferencia entre las cantidades de numeros positivos y negativos
 	var msg;//mensaje
-//-----------------------------------------------------------------------------------------	
+    //-----------------------------------------------------------------------------------------	
 	while(respuesta!="no")
 	{
 		contador++;
 		num=prompt('Ingrese un numero positivo o negativo');
-		num=parseint(num);
+		num=parseInt(num);
 		while(isNaN(num))
 		{
 			num=prompt('Escriba solo numeros');
@@ -41,7 +54,7 @@ function mostrar()
 		{
 			cc++;
 		}
-		if(num/2==0)
+		if(num/2==0)//como hacer para elegir solo los numeros pares
 		{
 			par++;
 		}
@@ -49,7 +62,7 @@ function mostrar()
 		{
 			impar++;
 		}
-	
+		respuesta=prompt("quiere seguir?");
 	}
 //-------------------------------------------------------------
 	pp=sp/cp;
@@ -71,11 +84,15 @@ function mostrar()
 
  document.write
  (
-	 'La suma de los positivos da como resultado:' + ' ' + sp + 
-	 '/nLa suma de los negativos ingresados es:'+ '' + sn +
-	 '/nLa cantidad de numeros positivos ingresados es:' + ' ' + parseInt(num>0) +
-	 '/nLa cantidad de numeros negativos' + '' + parseInt(num<0) +
-	 '/n'
+	'1-Suma de los negativos.' +' '+ sn 
+	+'2-Suma de los positivos.' +' '+ sp 
+	+'3-Cantidad de positivos.' +' '+ cp 
+	+'4-Cantidad de negativos.' +' '+ cn
+	+'5-Cantidad de ceros.' +' '+ cc
+	+'6-Cantidad de números pares.' +' '+ par
+	+'7-Promedio de positivos.' +' '+ pp 
+	+'8-Promedios de negativos.' +' '+ pn
+	+'9-Diferencia entre positivos y negativos' +' '+ Dif
  );
 
-}//FIN DE LA FUNCIÓN
+}		//FIN DE LA FUNCIÓN

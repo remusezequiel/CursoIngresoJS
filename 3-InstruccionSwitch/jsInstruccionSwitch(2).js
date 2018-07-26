@@ -4,6 +4,7 @@ function mostrar()
 var mesDelAño = document.getElementById('mes').value;
 
 alert (mesDelAño);
+// Evaluo los casos
 
 switch(mesDelAño)
 {
@@ -11,22 +12,25 @@ switch(mesDelAño)
     case "Agosto" :
     {
         alert("Abrigate que hace frio!!!");
-        break;
+    break;
     }
+ //---------------------------------------------------   
     case "Septiembre" :{}
     case "Octubre" :{}
     case "Noviembre" :{}
     case "Diciembre" :
     {
         alert("Ya pasamos el frio, ahora calor!!!");
-        break;
+    break;
     }
+ //----------------------------------------------------   
     default :
     {
         alert("Falta para el invierno!!!");
-        break;
+    break;
     }
 }
+
 /**Podria hacerse de la siguiente manera, pero leerlo es engorroso y es muy largo innecesariamente */
 /** 
 switch(mesDelAño)
