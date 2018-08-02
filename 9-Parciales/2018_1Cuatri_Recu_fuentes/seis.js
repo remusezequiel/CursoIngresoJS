@@ -11,7 +11,7 @@ Aclaración: hacer un switch y dentro toda la lógica incluyendo los if y con un
 function mostrar()
 {
     var nota;
-    nota=document.getElementByid("laHora").value;
+    nota = document.getElementByid("laHora").value;
     
     if(nota>=3)
     {

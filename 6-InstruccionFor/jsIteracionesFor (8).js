@@ -46,7 +46,7 @@ function mostrar()
         if(num%i==0)
         {
             contDiv++;
-            console.log(i)
+            console.log(i);
         }
     }
     
