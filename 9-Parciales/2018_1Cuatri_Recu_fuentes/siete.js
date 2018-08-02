@@ -10,23 +10,26 @@ d) La edad y la nota de la primera mujer ingresada o informar  */
 
 function mostrar()
 {
+//-------VARIABLES------------------------------------
     var nota,edad,sexo,cont,respuesta;
     
 //-------CONTADORES-----------------------------------
-    cont=0;
-    
+    cont=0;  
 //----------------------------------------------------    
     respuesta="si";
-//------Notas----------------------------
+//-------Notas----------------------------
 
-   nota=prompt('Ingrese las notas');
     while(respuesta != "no")
     {
-        while(cont<11)
+        nota=prompt('Ingrese las notas')
+        while(nota>10)
         {    
             cont++;
+            alert('EL NIMERO INGRESADO NO CORRESPONDE A UNA NOTA');
             nota=prompt('Ingrese las notas');
         }
+        
+        
         respuesta=prompt('¿Quiere ingresar mas notas?');
     }
 

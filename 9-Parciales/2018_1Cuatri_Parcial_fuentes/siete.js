@@ -1,16 +1,40 @@
+/**
+ * 1) Cantidad de mujeres
+ * 2) Cantidad de hombres
+ * 3) Cantidad de mayores de edad
+ * 4) Cantidad de menores de edad
+ * 4.1) Cantidad de hombres mayores de edad
+ * 5) La edad mas baja
+ * 6) La edad mas alta
+ * 7) promedio de edad de las mujeres
+ * 8) promedio de edad de los hombres
+ * 9) promedio de edad total
+ * 10)nombre del mas viejo
+ * 11)nombre de mas joven
+ * 12)sexo del mas viejo
+ * 13)nombre de la mujer mas vieja
+ */
+
 function mostrar()
 {
-    //------VARIABLES------------------------------------------------------------
-    var nombre,edad,sexo;
-    var respuesta="si";
-    //------CONTADORES-----------------------------------------------------------
-    var cont=0;
-    var ch=0;//Contador de hombres
-    var cm=0;//Contador de mujeres
-    var mayor=0;//Contador de mayores
-    var menor=0;//Contador de menores
-    var hmayor=0;
+//------VARIABLES------------------------------------------------------------
+    var nombre,edad,sexo,respuesta,pem,peh,pet;  //
+    var cont,ch,cm,mayor,menor,hMayor;          //CONTADORES
+    var aem,aeh,aet;                           //ACUMULADORES
+    var eMax,eMin;                            //EDADES MAXIMAS Y MINIMAS
+    eMax=0;
+    emin=101;
+    respuesta="si";
+//------CONTADORES-----------------------------------------------------------
+    cont=0;
+    ch=0;                                 //Contador de hombres
+    cm=0;                                //Contador de mujeres
+    mayor=0;                            //Contador de mayores
+    menor=0;                           //Contador de menores
+    hMayor=0;
+//------ACUMULADORES---------------------------------------------------------
     
+   
     /**var max=0;
      * var min=101;
      * if(edad>max){max=edad;}
@@ -36,35 +60,43 @@ function mostrar()
             sexo=prompt('Ingrese f o m segun sea su genero femenino o masculino respectivamente');
         }
         //---Cuento------------------------------------------------------------------------------
-        if(edad<18)
-        {
+        if(edad<18){
             menor++;
         }
-        else if(edad>18 && sexo == "m")
-        {
-            hmayor++;
+        else if(edad>18 && sexo == "m") {
+            hMayor++;
             mayor++;
         }
-        else
+        else 
         {
             mayor++;
         }
-        if(sexo="m")
-        {
+        if(sexo="m"){
             ch++;
         }
-        else
-        {
+        else {
             cm++;
         }
+        //---Edades minimas y maximas--------------------------------------------------------------
+        if(edad>max)
+        {
+            max=edad;
+        }
+        if(edad<min)
+        {
+            min=edad;
+        }
+        //---
+
 
         respuesta=prompt('Quiere agregar mas edades?');
 
     }
-    
+    //-------------PROMEDIOS------------------------------------------------------------------------
     document.write('Cantidad de menores:'+''+menor+'<br>'+
                    'Cantidad de mayores:'+''+mayor+'<br>'+
                    'Cantidad de hombres mayores:'+''+hmayor+'<br>'+
                    'Cantidad de hombres:'+' '+ch+'<br>'+
-                   'Cantidad de mujeres:'+' '+ch+'<br>');
+                   'Cantidad de mujeres:'+' '+ch+'<br>'
+                );
 }
