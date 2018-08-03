@@ -10,39 +10,70 @@ d) La edad y la nota de la primera mujer ingresada o informar  */
 
 function mostrar()
 {
-//-------VARIABLES------------------------------------
-    var nota,edad,sexo,cont,respuesta;
-    
-//-------CONTADORES-----------------------------------
-    cont=0;  
-//----------------------------------------------------    
+//-------VARIABLES-----------------------------------------------------
+    var nombre,nota,edad,sexo,respuesta,nombre,promedio;
+    var cont,max,min;
+    var an;
     respuesta="si";
-//-------Notas----------------------------
-
+//-------CONTADORES----------------------------------------------------
+    cont=0; 
+//-------MAXIMOS Y MINIMOS---------------------------------------------
+    emax=0;
+    emin=101;
+    nmax=0;
+    nmin=11;
+//-------ACUMULADORES--------------------------------------------------    
+    an=0;//acumulador de notas
+//-------SENTENCIAS----------------------------------------------------
+    
     while(respuesta != "no")
     {
+        //----NOMBRE---------------------------------------------------
+        nombre=prompt('Ingrese su nombre');
+        //----Notas----------------------------------------------------
         nota=prompt('Ingrese las notas')
         while(nota>10)
         {    
             cont++;
-            alert('EL NIMERO INGRESADO NO CORRESPONDE A UNA NOTA');
+            alert('EL NUMERO INGRESADO NO CORRESPONDE A UNA NOTA');
             nota=prompt('Ingrese las notas');
+            an=an+nota;//an+=nota    
         }
+        an=an+nota;//an+=nota
+        //--------------------------------------------------------------
         
+        //-----EDAD-----------------------------------------------------
+        edad=prompt("Ingrese su edad");
+        //--------------------------------------------------------------
         
-        respuesta=prompt('¿Quiere ingresar mas notas?');
-    }
-
-    edad=prompt("Ingrese su edad");
-    
-    //-----Genero----------------------------------------------
-    sexo=prompt("Ingrese su genero");
-
-    while(sexo!='m' && sexo!= 'f')
-    {
-        alert('No existe ese genero');
+        //-----Genero---------------------------------------------------
         sexo=prompt("Ingrese su genero");
-    }
 
-    
+        while(sexo!='m' && sexo!= 'f')
+        {
+            alert('No existe ese genero');
+            sexo=prompt("Ingrese su genero");
+        }
+
+        //--------------------------------------------------------------
+
+        //-----NOTA MAS BAJA Y SEXO DE LA PERSONA ----------------------
+
+        if (nota<nmin)
+        {
+            nmin=nota;
+        }   
+        
+        if(sexo=m && edad>17 && nota>5)
+        {
+            msg="";
+        }
+        respuesta=prompt('¿Quiere ingresar mas notas?');
+
+    }   
+
+
+    //----CUENTAS--------------------------------------------------
+    promedio=an/cont;//(a)
+
 }
