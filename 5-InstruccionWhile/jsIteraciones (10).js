@@ -55,7 +55,8 @@ function mostrar()
 		{
 			cc++;
 		}
-		if(num/2==0)//como hacer para elegir solo los numeros pares
+		
+		if(num%2 == 0 && num != 0)//como hacer para elegir solo los numeros pares
 		{
 			par++;
 		}
